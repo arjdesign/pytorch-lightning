@@ -71,7 +71,8 @@ if __name__ == '__main__':
 
     # each LightningModule defines arguments relevant to it
     parser = LightningTemplateModel.add_model_specific_args(parent_parser, root_dir)
-    hyperparams = parser.parse_args()
+    #hyperparams = parser.parse_args()
+    hyperparams = parser.parse_args(args=[])
 
     # ---------------------
     # RUN TRAINING
